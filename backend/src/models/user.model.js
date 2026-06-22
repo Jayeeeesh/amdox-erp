@@ -70,9 +70,8 @@ userSchema.pre('save', async function (next) {
   try {
     const saltRounds = Number(process.env.BCRYPT_ROUNDS) || 12;
     this.password = await bcrypt.hash(this.password, saltRounds);
-    next();
   } catch (error) {
-    next(error);
+    throw error;
   }
 });
 
