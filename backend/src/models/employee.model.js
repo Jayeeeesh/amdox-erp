@@ -124,8 +124,7 @@ employeeSchema.pre('save', function(next){
     this.email = this.email.toLowerCase();
   }
 
-  next();
-
+  
 });
 
 

@@ -10,6 +10,7 @@ const errorHandler = (err, req, res, next) => {
       process.env.NODE_ENV === "production"
         ? "Internal Server Error"
         : err.message,
+    errors: err.errors || [],
     ...(process.env.NODE_ENV !== "production" && {
       stack: err.stack,
       error: err.name,
