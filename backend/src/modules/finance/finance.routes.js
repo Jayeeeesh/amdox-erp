@@ -138,7 +138,7 @@ router.get('/transactions/:id', managerOnly, financeController.getTransaction);
  *               date:
  *                 type: string
  *                 format: date
- *                 example: "2024-01-01"
+ *                 example: "2026-06-24"
  *               description:
  *                 type: string
  *                 example: Monthly office rent
@@ -229,4 +229,4 @@ router.patch(
   financeController.restoreTransaction
 );
 
-module.exports = router;s
+module.exports = router;
