@@ -115,7 +115,7 @@ router.get('/orders/:id', managerOnly, supplyChainController.getPurchaseOrder);
  *               expectedDelivery:
  *                 type: string
  *                 format: date
- *                 example: "2026-12-01"
+ *                 example: "01-06-2026"
  *               notes:
  *                 type: string
  *                 example: Urgent order
