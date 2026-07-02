@@ -62,9 +62,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className="flex items-center justify-between px-6 py-5 border-b border-gray-700">
           <div>
             <h1 className="text-xl font-bold text-white">Amdox ERP</h1>
-            <p className="text-xs text-gray-400 mt-0.5">
-              AI-Powered Cloud ERP
-            </p>
+            <p className="text-xs text-gray-400 mt-0.5">AI-Powered Cloud ERP</p>
           </div>
           <button
             onClick={onClose}
@@ -81,12 +79,8 @@ const Sidebar = ({ isOpen, onClose }) => {
               {user?.name?.charAt(0).toUpperCase()}
             </div>
             <div>
-              <p className="text-sm font-medium text-white">
-                {user?.name}
-              </p>
-              <p className="text-xs text-gray-400 capitalize">
-                {user?.role}
-              </p>
+              <p className="text-sm font-medium text-white">{user?.name}</p>
+              <p className="text-xs text-gray-400 capitalize">{user?.role}</p>
             </div>
           </div>
         </div>
